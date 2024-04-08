@@ -1,0 +1,106 @@
+
+Trending Now
+DSA
+Web Tech
+Foundational Courses
+Data Science
+Practice Problem
+Python
+Machine Learning
+JavaScript
+System Design
+Django
+DevOps Tutorial
+Java
+C
+C++
+ReactJS
+NodeJS
+CP Live
+Aptitude
+Puzzles
+Projects
+▲
+90% Refund on Courses
+Share Your Experience
+Java Programs - Java Programming Examples
+Java Basic Programs
+Java Pattern Programs
+Java Conversion Programs
+Java Classes and Object Programs
+Java Methods Programs
+Java Searching Programs
+Java 1-D Array Programs
+Java 2-D Arrays (Matrix) Programs
+Print a 2 D Array or Matrix in Java
+Java Program to Add two Matrices
+Sorting a 2D Array according to values in any given column in Java
+Java Program to Check if two Arrays are Equal or not
+Java Program to Find Transpose of Matrix
+Java Program to Find the Determinant of a Matrix
+Java Program to Find the Normal and Trace of a Matrix
+Java Program to Print Boundary Elements of the Matrix
+Java Program to Rotate Matrix Elements
+Java Program to Compute the Sum of Diagonals of a Matrix
+Java Program to Interchange Elements of First and Last in a Matrix Across Rows
+Java Program to Interchange Elements of First and Last in a Matrix Across Columns
+Java String Programs
+Java List Programs
+Java Date and Time Programs
+Java File Programs
+Java Directory Programs
+Java Exceptions and Errors Programs
+Java Collections Programs
+Java Multithreading Programs
+Java More Java Programs
+Java Backend DevelopmentCourse
+Java Program to Find Transpose of Matrix
+Last Updated : 31 Jul, 2023
+Transpose of a matrix is obtained by changing rows to columns and columns to rows. In other words, the transpose of A[][] is obtained by changing A[i][j] to A[j][i].
+
+Transpose of a matrix
+Find Transpose of a Matrix in Java
+There are two shapes in Matrix to find transpose as mentioned below:
+
+Square Matrix
+Rectangle Matrix
+1. Transpose of Square Matrix
+The below program finds the transpose of A[][] and stores the result in B[][], we can change N for different dimensions. 
+
+Below is the implementation of the above method:
+Java
+// Java Program to find 
+// transpose of a matrix 
+  
+class GFG { 
+    static final int N = 4; 
+  
+    // This function stores transpose 
+    // of A[][] in B[][] 
+    static void transpose(int A[][], int B[][]) 
+    { 
+        int i, j; 
+        for (i = 0; i < N; i++) 
+            for (j = 0; j < N; j++) 
+                B[i][j] = A[j][i]; 
+    } 
+  
+    // Driver code 
+    public static void main(String[] args) 
+    { 
+        int A[][] = { { 1, 1, 1, 1 }, 
+                      { 2, 2, 2, 2 }, 
+                      { 3, 3, 3, 3 }, 
+                      { 4, 4, 4, 4 } }; 
+  
+        int B[][] = new int[N][N], i, j; 
+  
+        transpose(A, B); 
+  
+        System.out.print("Result matrix is \n"); 
+        for (i = 0; i < N; i++) { 
+            for (j = 0; j < N; j++) 
+                System.out.print(B[i][j] + " "); 
+            System.out.print("\n"); 
+        } 
+  
